@@ -2,10 +2,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
+    "firebase": "9.4.1",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
