@@ -1,29 +1,32 @@
-# Next.js + Tailwind CSS Example
+# Truth or dare
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+`Truth or dare` will stand to make your party more mess.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+This repo is dedicated to build front-end of `Truth or dare` project.
 
-## Preview
+## Environments
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+| Env         | Branch Tracked |
+| ----------- | -------------- |
+| Development | `dev`        |
+| Production  | `build`        |
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Toolchain
 
-## Deploy your own
+| Tool         | Version    |
+| ----         | ---------- |
+| Node         | `^14.17.4` |
+| Yarn         | `^1.22.11` |
+| React        | `^17.0.2`  |
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Setup
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+1. Install Node version `^14.17.4` (via nvm or other) and ensure the project uses one a compatible version locally
 
-## How to use
+2. Run `yarn` to install dependencies
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+3. Run `yarn dev` to run the app in web browser. 
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+4. You can now view `Truth or dare` in the http://localhost:3000/.R
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+> Don't drink too much, Good luck !!!
