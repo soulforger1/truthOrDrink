@@ -1,7 +1,7 @@
 const Card = ({ children, onClick }) => {
 
     return (
-        <div onClick={onClick} className={`bg-yellow-500 flex flex-col items-center justify-center h-500 w-280 py-2`}>
+        <div onClick={onClick} className={`bg-amber-300 flex items-center justify-center h-500 w-280 shadow-xl rounded-lg select-none`}>
             {children}
         </div>
     )

@@ -3,8 +3,8 @@ const Loader = () => {
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
             <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
                 <h1 className="text-6xl font-bold">
-                    Welcome to{' '}
-                    <a className="text-yellow-500">
+                    Welcome to {' '}
+                    <a className="text-orange-400">
                         Truth or Drink
                     </a>
                 </h1>
