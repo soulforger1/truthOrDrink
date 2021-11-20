@@ -1,39 +1,24 @@
 import { useEffect, useState } from 'react';
 import Loader from '../../components/loader';
-import Card from '../../components/card/card';
+import { Cards } from '../../components/card/cards';
 import { firestore } from '../../firebase/firebase';
-import {
-    collection,
-    getDocs,
-    startAfter,
-    limit,
-    query,
-} from 'firebase/firestore';
+import { getDoc, doc } from 'firebase/firestore';
 import _ from 'lodash';
+
+const getData = async () => {
+    try {
+        const docData = await getDoc(doc(firestore, 'modes', 'simple'))
+        return docData.data();
+    } catch (err) {
+        console.error(err);
+    }
+};
 
 const Home = () => {
     const [data, setState] = useState(undefined);
 
-    const getData = async (lastVisible) => {
-        try {
-            let cquery;
-            if (lastVisible)
-                cquery = query(
-                    collection(firestore, 'questions'),
-                    startAfter(lastVisible),
-                    limit(25)
-                );
-            else cquery = query(collection(firestore, 'questions'), limit(25));
-
-            const { docs } = await getDocs(cquery);
-            return docs;
-        } catch (err) {
-            console.error(err);
-        }
-    };
     const shuffle = async (lastVisible) => {
-        const docs = await getData(lastVisible);
-        const questions = docs?.map((doc) => ({ ...doc.data(), id: doc.id }));
+        const { questions } = await getData(lastVisible);
         setState(_.shuffle(questions));
     };
 
@@ -41,18 +26,13 @@ const Home = () => {
         shuffle();
     }, []);
 
-    const onCardClick = () => {
-        console.log(data && data[0]);
-        setState(_.drop(data));
-    };
     if (!data) return <Loader />;
-
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-black">
             <div className="text-3xl text-white font-montserrat">
                 Truth or Drink
             </div>
-            <Card questions={data} />
+            <Cards questions={data} />
         </div>
     );
 };
