@@ -8,13 +8,20 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      amber: colors.amber,
-      orange: colors.orange,
+      black: colors.black,
+      white: colors.white,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat': ['Montserrat']
+      }
+    },
     spacing: {
-      "500": '500px',
-      "280": '280px',
+      "610": '610px',
+      "300": '300px',
+      "66": '66px',
+      "24": '24px',
+      "05": '0.5px',
     }
   },
   variants: {
