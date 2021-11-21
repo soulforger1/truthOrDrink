@@ -53,5 +53,6 @@ This repo is dedicated to build front-end of `Truth or dare` project.
     ```
     firebase deploy --only hosting
     ```
+3. Global link : https://truthordrink-8a9c0.web.app
 
 > # Don't drink too much, Good luck !!!
