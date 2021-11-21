@@ -4,29 +4,54 @@
 
 This repo is dedicated to build front-end of `Truth or dare` project.
 
-## Environments
-
-| Env         | Branch Tracked |
-| ----------- | -------------- |
-| Development | `dev`        |
-| Production  | `build`        |
-
 ## Toolchain
 
 | Tool         | Version    |
 | ----         | ---------- |
-| Node         | `^14.17.4` |
-| Yarn         | `^1.22.11` |
-| React        | `^17.0.2`  |
+| Node         | `14.17.4`  |
+| Yarn         | `1.22.11`  |
+| React        | `17.0.2`   |
+| Firebase     | `9.5.0`    |
+| Next         | `12.0.4`   |
 
 ## Setup
 
-1. Install Node version `^14.17.4` (via nvm or other) and ensure the project uses one a compatible version locally
+1. On terminal copy and run this comand 
+    ```
+    git clone git@github.com:soulforger1/truthOrDrink.git
+    ```
 
-2. Run `yarn` to install dependencies
+2. Enter folder
+    ``` 
+    cd truthOrDrink 
+    ```
 
-3. Run `yarn dev` to run the app in web browser. 
+3. Install Node version `^14.17.4` (via nvm or other) and ensure the project uses one a compatible version locally
 
-4. You can now view `Truth or dare` in the http://localhost:3000/.R
+4. Install dependencies
+    ```
+    yarn
+    ```
 
-> Don't drink too much, Good luck !!!
+## Run project
+
+1. Start the app in web browser. 
+    ```
+    yarn dev
+    ```
+
+2. You can now view `Truth or dare` in the http://localhost:3000/
+
+## Deploy
+
+1. Prepare project to deploy
+    ```
+    yarn build
+    ```
+
+2. Deploy project to firebase hosting
+    ```
+    firebase deploy --only hosting
+    ```
+
+> # Don't drink too much, Good luck !!!
