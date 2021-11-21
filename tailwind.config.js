@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'montserrat': ['Montserrat']
+        'montserrat': 'Montserrat'
       }
     },
     spacing: {

@@ -1,9 +1,11 @@
 import Home from './home';
 import Head from 'next/dist/shared/lib/head';
+import Category from './category/category';
 
 const Web = () => {
     return (
         <>
+            <Category />
             <Home />
             <Head>
                 <title>Truth or Drink</title>
