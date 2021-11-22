@@ -8,9 +8,10 @@ const Category = () => {
 
     return (
         <div className="flex flex-col items-center justify-around min-h-screen py-2 bg-black">
-            <div className="text-3xl text-white font-montserrat">
-                Choose Mode:
+            <div className="text-4xl font-semibold text-white font-montserrat">
+                Select mode to play
             </div>
+            <div className="illus"></div>
             <div className="flex flex-col items-center justify-around">
                 <Link href="/home">
                     <button

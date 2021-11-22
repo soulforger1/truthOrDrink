@@ -1,3 +1,10 @@
 * {
     font-family: 'Montserrat', sans-serif !important;
 }
+
+.illus {
+    background-image: url('../assets/beer.svg');
+    background-size: cover;
+    width: 150px;
+    height: 200px;
+}
