@@ -8,7 +8,7 @@ import { CategoryContext } from '../../context/';
 
 const getData = async (category) => {
     try {
-        const docData = await getDoc(doc(firestore, 'modes', category))
+        const docData = await getDoc(doc(firestore, 'modes', category));
         return docData.data();
     } catch (err) {
         console.error(err);
@@ -29,7 +29,7 @@ const Home = () => {
     }, []);
     if (!data) return <Loader />;
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-black">
+        <div className="flex flex-col overflow-hidden items-center justify-center min-h-screen py-2 bg-black">
             <div className="text-3xl text-white font-montserrat">
                 Truth or Drink
             </div>
