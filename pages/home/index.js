@@ -18,7 +18,7 @@ const getData = async (category) => {
 const Home = () => {
     const [data, setState] = useState(undefined);
     const { category } = useContext(CategoryContext);
-
+    
     const shuffle = async (category) => {
         const { questions } = await getData(category);
         setState(_.shuffle(questions));

@@ -22,6 +22,7 @@ module.exports = {
       "66": '66px',
       "24": '24px',
       "05": '0.5px',
+      "05": '0.5px',
     }
   },
   variants: {
