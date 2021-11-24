@@ -55,6 +55,7 @@ export const Cards = ({ questions }) => {
         setCanDrag(true);
         setCardSwitch(true);
         setTimer(30);
+        setIndex(index + 1);
         // setStart(false);
     };
 
