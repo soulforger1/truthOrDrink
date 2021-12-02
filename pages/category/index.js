@@ -7,16 +7,16 @@ const Category = () => {
     const { setCategory } = useContext(CategoryContext);
 
     return (
-        <div className="flex flex-col items-center justify-around min-h-screen py-2 bg-black">
-            <div className="text-4xl font-semibold text-white font-montserrat">
+        <div className="flex flex-col items-center justify-around min-h-screen p-10 bg-black">
+            <div className="text-4xl font-semibold text-center text-white font-montserrat m-10">
                 Select mode to play
             </div>
             <div className="illus"></div>
-            <div className="flex flex-col items-center justify-around">
+            <div className="flex flex-col items-center justify-around mb-66">
                 <Link href="/home">
                     <button
                         onClick={() => setCategory('simple')}
-                        className="bg-white hover:bg-gray text-black font-extrabold rounded w-300 h-66 text-xl mb-24"
+                        className="bg-white hover:bg-gray text-black font-extrabold rounded w-270 h-66 text-xl mb-24"
                     >
                         Simple
                     </button>
@@ -24,7 +24,7 @@ const Category = () => {
                 <Link href="/home">
                     <button
                         onClick={() => setCategory('adult')}
-                        className="bg-white hover:bg-gray text-black font-extrabold rounded w-300 h-66 text-xl"
+                        className="bg-white hover:bg-gray text-black font-extrabold rounded w-270 h-66 text-xl"
                     >
                         Adult
                     </button>

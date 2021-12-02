@@ -29,7 +29,7 @@ const Home = () => {
     }, []);
     if (!data) return <Loader />;
     return (
-        <div className="flex flex-col overflow-hidden items-center justify-center min-h-screen py-2 bg-black">
+        <div className="flex flex-col overflow-hidden items-center justify-center h-100vh bg-black">
             <div className="text-3xl text-white font-montserrat">
                 Truth or Drink
             </div>

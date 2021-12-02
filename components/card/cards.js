@@ -26,6 +26,7 @@ export const Cards = ({ questions }) => {
             console.log(time);
             setTimer(time);
             if (start) setTimeout(() => countDown(--time), 1000);
+            console.log(start);
         } else {
             setTimer(30);
             setCardSwitch(true);
@@ -42,7 +43,7 @@ export const Cards = ({ questions }) => {
             setCanDrag(false);
             setCardSwitch(false);
             setStart(true);
-            // countDown(30);
+            countDown(30);
         } else {
             setIndex(index + 1);
             setCardSwitch(true);
@@ -56,7 +57,7 @@ export const Cards = ({ questions }) => {
         setCardSwitch(true);
         setTimer(30);
         setIndex(index + 1);
-        // setStart(false);
+        setStart(false);
     };
 
     // Dare contents
@@ -64,7 +65,7 @@ export const Cards = ({ questions }) => {
     const Dare = () => {
         return (
             <div className="flex-col">
-                {/* <p>{timer}</p> */}
+                <p>{timer}</p>
                 <p className='mb-24'>{questions[index].dare}</p>
                 <button
                     onClick={nextButton}
@@ -77,7 +78,6 @@ export const Cards = ({ questions }) => {
     };
 
     return (
-        <motion.div>
             <motion.div
                 drag={canDrag}
                 onDragEnd={onDragEnds}
@@ -88,7 +88,7 @@ export const Cards = ({ questions }) => {
                     right: 0,
                     bottom: 0,
                 }}
-                className={`flex items-center justify-center h-610 w-300 rounded-lg select-none text-3xl text-white bg-black border-2 border-white text-center px-05`}
+                className={`flex items-center justify-center h-550 w-270 rounded-lg select-none text-3xl text-white bg-black border-2 border-white text-center px-05`}
             >
                 <motion.div
                     style={{
@@ -106,6 +106,5 @@ export const Cards = ({ questions }) => {
                     }}
                 />
             </motion.div>
-        </motion.div>
     );
 };
